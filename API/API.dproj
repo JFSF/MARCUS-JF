@@ -295,7 +295,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="src\View\Pages\COLISION.API.View.Pages.Index.pas">
+        <DCCReference Include="src\View\Pages\colision.api.view.pages.index.pas">
             <Form>pgIndex</Form>
             <FormType>fmx</FormType>
         </DCCReference>
@@ -1951,6 +1951,7 @@
                 <Platform value="Android64">True</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimARM64">True</Platform>
+                <Platform value="Linux64">False</Platform>
                 <Platform value="OSX64">True</Platform>
                 <Platform value="OSXARM64">True</Platform>
                 <Platform value="Win32">True</Platform>

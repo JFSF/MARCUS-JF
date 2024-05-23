@@ -18,7 +18,8 @@ type
       class function GetMachineLnx                       : string;
 
     public
-      class function GetIP                               : string;
+      class function GetPubIP                            : string;
+      class function GetPrvIP                            : string;
       class function GetHost                             : string;
       class function GetOS                               : string;
       class function UpperCamelCase(const ATexto: string): string;
@@ -37,13 +38,26 @@ uses
   FMX.Platform,
 
   IdHTTP,
+  IdStack,
+  IdGlobal,
+  IdStackBSDBase,
+  IdStackConsts,
+  IdIPWatch,
+
+  {$IFDEF MSWINDOWS}
+  Winapi.Windows,
+  IdStackWindows,
+  {$ENDIF}
+
+  {$IFDEF POSIX}
+  Posix.UniStd,
+  Posix.SysUtsname,
+  {$ENDIF}
 
   System.Classes,
   System.IOUtils,
   System.SysUtils,
-  System.Types,
-
-  Winapi.Windows;
+  System.Types;
 
 class procedure TUtils.AlterarCor(const AComponente: TImage; const ACor: TAlphaColor);
 begin
@@ -94,7 +108,6 @@ end;
 
 class function TUtils.GetHost: string;
 begin
-  var LPlatforma := TPlatformServices.Current;
 
   case TOSVersion.Platform of
        pfWindows: Result := GetMachineWin;
@@ -103,7 +116,12 @@ begin
   end;
 end;
 
-class function TUtils.GetIP: string;
+class function TUtils.GetPrvIP: string;
+begin
+
+end;
+
+class function TUtils.GetPubIP: string;
 begin
   with TIdHTTP.Create do
        try

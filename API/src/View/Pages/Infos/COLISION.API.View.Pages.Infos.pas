@@ -48,9 +48,9 @@ type
     rctnglHora   : TRectangle;
     lblInfoData  : TLabel;
     lblInfoHora  : TLabel;
-    lblStatus    : TLabel;
-    rctnglStatus : TRectangle;
-    lblInfoStatus: TLabel;
+    tmrInfos     : TTimer;
+
+    procedure tmrInfosTimer(Sender: TObject);
 
   private
 
@@ -69,11 +69,20 @@ uses
 
 function TpgInfos.Render: TFmxObject;
 begin
-  lblInfoHost.Text  := TUtils.GetHost;
-  lblInfoOS.Text    := TUtils.GetOS;
-  lblInfoPubIP.Text := TUtils.GetIP;
+  lblInfoHost.Text   := TUtils.GetHost;
+  lblInfoOS.Text     := TUtils.GetOS;
+  lblInfoPubIP.Text  := TUtils.GetPubIP;
+  lblInfoPrivIP.Text := TUtils.GetPrvIP;
+  lblInfoData.Text   := FormatDateTime('dddd", "dd" de "mmmm " de "yyyy', Now);
+  lblInfoHora.Text   := FormatDateTime('hh"H "nn"m "ss"s"', Now);
 
   Result := lytContainer;
+end;
+
+procedure TpgInfos.tmrInfosTimer(Sender: TObject);
+begin
+  lblInfoData.Text  := FormatDateTime('dddd", "dd" de "mmmm " de "yyyy', Now);
+  lblInfoHora.Text  := FormatDateTime('hh"H "nn"m "ss"s"', Now);
 end;
 
 procedure TpgInfos.UnRender;

@@ -161,13 +161,13 @@ object pgInfos: TpgInfos
         TextSettings.Font.Size = 14.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
         Text = 'Utilizador'
-        TabOrder = 10
+        TabOrder = 9
       end
       object rctnglOS: TRectangle
         Fill.Color = claWhite
         Position.X = 8.000000000000000000
         Position.Y = 220.000000000000000000
-        Size.Width = 290.000000000000000000
+        Size.Width = 369.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         XRadius = 8.000000000000000000
@@ -177,7 +177,7 @@ object pgInfos: TpgInfos
           StyledSettings = [Family, Size]
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
-          Size.Width = 270.000000000000000000
+          Size.Width = 349.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -219,7 +219,7 @@ object pgInfos: TpgInfos
         TextSettings.Font.Size = 14.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
         Text = 'Sistema Operativo'
-        TabOrder = 9
+        TabOrder = 8
       end
       object lblData: TLabel
         StyledSettings = [Family, FontColor]
@@ -230,8 +230,8 @@ object pgInfos: TpgInfos
         Size.PlatformDefault = False
         TextSettings.Font.Size = 14.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
-        Text = 'Data Host'
-        TabOrder = 8
+        Text = 'Data Server'
+        TabOrder = 7
       end
       object lblHora: TLabel
         StyledSettings = [Family, FontColor]
@@ -242,7 +242,7 @@ object pgInfos: TpgInfos
         Size.PlatformDefault = False
         TextSettings.Font.Size = 14.000000000000000000
         TextSettings.Font.StyleExt = {00060000000000000004000000}
-        Text = 'Hora Host'
+        Text = 'Hora Server'
         TabOrder = 6
       end
       object rctnglData: TRectangle
@@ -290,41 +290,11 @@ object pgInfos: TpgInfos
           TabOrder = 1
         end
       end
-      object lblStatus: TLabel
-        StyledSettings = [Family, FontColor]
-        Position.X = 8.000000000000000000
-        Position.Y = 368.000000000000000000
-        Size.Width = 120.000000000000000000
-        Size.Height = 20.000000000000000000
-        Size.PlatformDefault = False
-        TextSettings.Font.Size = 14.000000000000000000
-        TextSettings.Font.StyleExt = {00060000000000000004000000}
-        Text = 'Status Host'
-        TabOrder = 7
-      end
-      object rctnglStatus: TRectangle
-        Fill.Color = claWhite
-        Position.X = 8.000000000000000000
-        Position.Y = 396.000000000000000000
-        Size.Width = 290.000000000000000000
-        Size.Height = 30.000000000000000000
-        Size.PlatformDefault = False
-        XRadius = 8.000000000000000000
-        YRadius = 8.000000000000000000
-        object lblInfoStatus: TLabel
-          Align = Client
-          StyledSettings = [Family, Size]
-          Margins.Left = 10.000000000000000000
-          Margins.Right = 10.000000000000000000
-          Size.Width = 270.000000000000000000
-          Size.Height = 30.000000000000000000
-          Size.PlatformDefault = False
-          TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.FontColor = claBlue
-          Text = 'lblInfoStatus'
-          TabOrder = 0
-        end
-      end
     end
+  end
+  object tmrInfos: TTimer
+    OnTimer = tmrInfosTimer
+    Left = 365
+    Top = 470
   end
 end
