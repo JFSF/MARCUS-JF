@@ -1,0 +1,330 @@
+object pgInfos: TpgInfos
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  ClientHeight = 520
+  ClientWidth = 745
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lytContainer: TLayout
+    Align = Client
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Size.Width = 745.000000000000000000
+    Size.Height = 520.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lytTop: TLayout
+      Align = Top
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 735.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblInfos: TLabel
+        Align = Client
+        StyledSettings = [FontColor]
+        Size.Width = 735.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Verdana'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'I n f o r m a '#231' '#245' e s'
+        TabOrder = 0
+      end
+    end
+    object lytBody: TLayout
+      Align = Client
+      Size.Width = 735.000000000000000000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lblHost: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 8.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Server'
+        TabOrder = 0
+      end
+      object rctnglHost: TRectangle
+        Fill.Color = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 52.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object lblInfoHost: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'lblInfoHost'
+          TabOrder = 0
+        end
+      end
+      object lblPubIP: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 8.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'IP P'#250'blico'
+        TabOrder = 4
+      end
+      object rctnglPubIP: TRectangle
+        Fill.Color = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 132.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object rctnglPrivIP: TRectangle
+          Fill.Color = claWhite
+          Position.X = 428.000000000000000000
+          Size.Width = 290.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 8.000000000000000000
+          YRadius = 8.000000000000000000
+          object lblInfoPrivIP: TLabel
+            Align = Client
+            StyledSettings = [Family, Size]
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 270.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claBlue
+            Text = 'lblInfoPubIP'
+            TabOrder = 0
+          end
+        end
+        object lblInfoPubIP: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'lblInfoPubIP'
+          TabOrder = 0
+        end
+      end
+      object lblPrivIP: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 436.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'IP Privado'
+        TabOrder = 3
+      end
+      object lblUser: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 436.000000000000000000
+        Position.Y = 192.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Utilizador'
+        TabOrder = 10
+      end
+      object rctnglOS: TRectangle
+        Fill.Color = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 220.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object lblInfoOS: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'lblInfoOS'
+          TabOrder = 0
+        end
+      end
+      object rctnglUser: TRectangle
+        Fill.Color = claWhite
+        Position.X = 436.000000000000000000
+        Position.Y = 220.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object lblInfoUser: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'lblInfoUser'
+          TabOrder = 0
+        end
+      end
+      object lblOS: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 8.000000000000000000
+        Position.Y = 192.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Sistema Operativo'
+        TabOrder = 9
+      end
+      object lblData: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 8.000000000000000000
+        Position.Y = 280.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Data Host'
+        TabOrder = 8
+      end
+      object lblHora: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 436.000000000000000000
+        Position.Y = 280.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Hora Host'
+        TabOrder = 6
+      end
+      object rctnglData: TRectangle
+        Fill.Color = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 308.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object rctnglHora: TRectangle
+          Fill.Color = claWhite
+          Position.X = 428.000000000000000000
+          Size.Width = 290.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          XRadius = 8.000000000000000000
+          YRadius = 8.000000000000000000
+          object lblInfoHora: TLabel
+            Align = Client
+            StyledSettings = [Family, Size]
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 270.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claBlue
+            Text = 'lblInfoData'
+            TabOrder = 1
+          end
+        end
+        object lblInfoData: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'lblInfoData'
+          TabOrder = 1
+        end
+      end
+      object lblStatus: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 8.000000000000000000
+        Position.Y = 368.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Status Host'
+        TabOrder = 7
+      end
+      object rctnglStatus: TRectangle
+        Fill.Color = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 396.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object lblInfoStatus: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 270.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'lblInfoStatus'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,32 @@
+object pgIndex: TpgIndex
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  ClientHeight = 600
+  ClientWidth = 800
+  Position = ScreenCenter
+  Quality = HighQuality
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object rctnglContainer: TRectangle
+    Align = Contents
+    Fill.Color = claWhite
+    Size.Width = 800.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object lytContainer: TLayout
+      Align = Client
+      Size.Width = 800.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end

@@ -1,0 +1,101 @@
+object pgMain: TpgMain
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  ClientHeight = 600
+  ClientWidth = 800
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lytContainer: TLayout
+    Align = Client
+    Size.Width = 800.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lytTopBar: TLayout
+      Align = MostTop
+      Size.Width = 800.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lytBtnSys: TLayout
+        Align = MostRight
+        Position.X = 690.000000000000000000
+        Size.Width = 110.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object lytTitulo: TLayout
+        Align = Client
+        Size.Width = 690.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object lytBottomBar: TLayout
+      Align = MostBottom
+      Position.Y = 560.000000000000000000
+      Size.Width = 800.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lytBtnGrip: TLayout
+        Align = MostRight
+        Position.X = 760.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object szgrpMain: TSizeGrip
+          Align = Client
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object lytBtnSocial: TLayout
+        Align = MostLeft
+        Size.Width = 145.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+      object lytDataHora: TLayout
+        Align = Client
+        Size.Width = 615.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+    end
+    object lytBody: TLayout
+      Align = Client
+      Margins.Left = 55.000000000000000000
+      Size.Width = 745.000000000000000000
+      Size.Height = 520.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+    object mltvwMain: TMultiView
+      BorderOptions.Visible = False
+      NavigationPaneOptions.CollapsedWidth = 55.000000000000000000
+      ShadowOptions.Enabled = False
+      Size.Width = 250.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lytMenu: TLayout
+        Align = Client
+        HitTest = True
+        Size.Width = 55.000000000000000000
+        Size.Height = 520.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+end
